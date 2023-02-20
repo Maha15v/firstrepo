@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loan</title>
+    <link href="loan.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url(./img/loan2.jpg);
+            background-size:cover ;
+        }
+    </style>
+            
+</head>
+<body>
+    <div class="header">
+        <img src="./img/sbilogo.jpg" height="50px" width="50px">
+        <h1 style="color:white;">STATE BANK OF INDIA</h1>
+        <a href="https://en.wikipedia.org/wiki/State_Bank_of_India#:~:text=State%20Bank%20of%20India%20%28SBI%29%20is%20an%20Indian,the%20only%20Indian%20bank%20on%20the%20list.%20" style="color: white;">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.best-jobs-online.com/contact?utm_source=bing&utm_medium=cpc&utm_campaign=IN%7CPositionKWs&utm_term=State%20Bank%20careers&utm_content=State%20Bank" style="color: white;">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://sbi.co.in/web/customer-care/faq-s" style="color: white;">FAQ's</a>
+    </div><br><br><br><br>
+    <section id="loginSection">
+        <form id="frmLogin">
+            <label>Username</label>
+            <input class="cornerStyle" type="text" id="txtUsername" >
+            <br /><br />
+            <label>Password</label>
+            <input class="cornerStyle" type="password" id="txtPassword" />
+            <br /><br />
+            <input class="cornerStyle buttonStyle" onclick="login()" type="submit" id="btnLogin" value="Login" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button>
+                <a href="basicinfo.html">Register</a>
+            </button><br><br>
+           
+            
+
+            
+
+            <script>
+                function login() {
+                    //alert("login");
+                    var USERNAME = "ramu";
+                    var PASSWORD = "1234";
+                    var entered_username = document.getElementById("txtUsername").value;
+                    var entered_password = document.getElementById("txtPassword").value;
+                    //alert(entered_username + " " + entered_password);
+                    if (entered_username == USERNAME) {
+                        if (entered_password == PASSWORD)
+                            alert("Logged in successfully")
+                        else
+                            alert("Invalid Password")
+                    }
+                    else
+                        alert("Invalid information or register")
+                }
+            </script>
+
+              
+   
+
+
+
+        </form>
+    </section>
+
+    
+    
+    
+</body>
+</html>
