@@ -1,0 +1,136 @@
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom,rgb(62, 41, 96),white);
+    background-image: url(http://wallpapercave.com/wp/BMrmUGk.jpg);
+    
+}
+
+.star,.planet{
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    top: calc(50% - var(--size)/2);
+    left: calc(50% - var(--size)/2);
+    border-radius: 50%;
+    border: 2px dotted white;
+}
+
+.star,.sun{
+    --size:100px;
+    background: linear-gradient(45deg,orange,red);
+    
+}
+
+.planet.mercury{
+    --size:30px;
+    background: pink;
+    animation:mercury 3s linear infinite ;
+}
+
+.planet.venus{
+    --size:50px;
+    background: greenyellow;
+    animation:venus 3.5s linear infinite ;
+}
+
+.planet.earth{
+    --size:55px;
+    background: blue;
+    animation:earth 4s linear infinite ;
+}
+
+.planet.mars{
+    --size:60px;
+    background: blueviolet;
+    animation:mars 4.5s linear infinite ;
+}
+
+.planet.jupiter{
+    --size:70px;
+    background: orange;
+    animation:jupiter 5s linear infinite ;
+}
+
+.planet.saturn{
+    --size:75px;
+    background: red;
+    animation:saturn 5.5s linear infinite ;
+}
+
+.planet.uranus{
+    --size:80px;
+    background: aqua;
+    animation:uranus 6s linear infinite ;
+}
+
+.planet.neptune{
+    --size:90px;
+    background: gray;
+    animation:neptune 6.5s linear infinite ;
+}
+
+@keyframes mercury{
+    from{
+        transform: rotate(0) translateX(80px);
+    }
+    to{
+        transform: rotate(360deg)translateX(80px) ;
+    }
+}
+@keyframes venus{
+    from{
+        transform: rotate(0) translateX(120px);
+    }
+    to{
+        transform: rotate(360deg)translateX(120px) ;
+    }
+}
+@keyframes earth{
+    from{
+        transform: rotate(0) translateX(160px);
+    }
+    to{
+        transform: rotate(360deg)translateX(160px) ;
+    }
+}
+@keyframes mars{
+    from{
+        transform: rotate(0) translateX(200px);
+    }
+    to{
+        transform: rotate(360deg)translateX(200px) ;
+    }
+}
+@keyframes jupiter{
+    from{
+        transform: rotate(0) translateX(240px);
+    }
+    to{
+        transform: rotate(360deg)translateX(240px) ;
+    }
+}
+@keyframes saturn{
+    from{
+        transform: rotate(0) translateX(280px);
+    }
+    to{
+        transform: rotate(360deg)translateX(280px) ;
+    }
+}
+@keyframes uranus{
+    from{
+        transform: rotate(0) translateX(320px);
+    }
+    to{
+        transform: rotate(360deg)translateX(320px) ;
+    }
+}
+@keyframes neptune{
+    from{
+        transform: rotate(0) translateX(360px);
+    }
+    to{
+        transform: rotate(360deg)translateX(360px) ;
+    }
+}
