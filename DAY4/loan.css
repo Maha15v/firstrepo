@@ -1,0 +1,25 @@
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background:white;
+  }
+  
+  .header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
+  section{
+    text-align: center;
+    border: solid white;
+
+ }
+ .header a{
+  position:relative;
+  
+ }
+
+
+  
